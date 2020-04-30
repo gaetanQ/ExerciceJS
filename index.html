@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Javascript</title>
+        <meta name="description" content="Exemples">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+
+        <form action="" method="post">
+            <div>
+                <label for='lastName'>Nom :</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Votre nom">
+            </div>
+            <div>
+                <label for="firstName">Prénom :</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Votre prénom">
+             </div>
+             <div>
+                <label for="city">Ville :</label>
+                <input type="text" id="city" name="city" placeholder="ville">
+            </div>
+            <div>
+                <input type="button" value="envoyer" id="bouton_envoi" onclick="controle()">
+            </div>
+        </form> 
+
+        <script>
+            function controle() {
+               
+            var contenulastName =document.getElementById("lastName").value;
+
+            var contenufirstName =document.getElementById("firstName").value;
+
+            var contenucity =document.getElementById("city").value;
+
+        
+            alert('Nom : ' + contenulastName + '\n' + 'Prénom : ' + contenufirstName + '\n' + 'Ville : ' + contenucity);
+
+        }
+        </script>
+      
+
+       
+        <!--exercice 1-->
+        <!--
+       <script>
+           //Exercice 1
+           /*
+           var myVar;
+           myVar='Il fait beau aujourd\'hui';
+           alert(myVar);// Commenter une ligne /* commenter plusieurs ligne*/
+           
+           //Exercice 2
+          
+          /*
+          var lastName='Doe';
+          var firstName='John';
+          var city='New-York';
+
+          //Version 1
+
+          alert('Nom : ' + lastName + '\n' + 'Prénom : ' + firstName + '\n' + 'Ville : ' + city);
+
+          //Version 2
+
+          /*var myString= 'Nom : ' + lastName + '\n' + 'Prénom : ' + firstName + '\n' + 'Ville : ' + city);
+          alert(myString)*/
+
+          //Exercice 3
+            /* 
+          var reponse= prompt ('Bonjour', ' Gaetan ');
+          if ( reponse == null){
+              alert('vous avez cliqué sur annule');
+            } {
+                alert(' Bonjour ' + reponse + ',ça roule?');
+            }*/
+
+            //correction 
+            /*
+            var myName = prompt('Quel est votre prénom ?');
+
+            alert('Bonjour ' + myName); */
+
+
+          //Exercice 4
+/*
+          var lastName = prompt('Nom');
+            var firstName = prompt('Prénom')
+            var city = prompt('Ville')
+            if( lastName, firstName, city == null )
+                {
+             alert('Vous avez cliqué sur Annuler');
+            } else {
+            alert ('Nom: ' + lastName + '\n' + 'Prénom: ' + firstName + '\n' + 'Ville: ' + city);
+            } */
+        </script> -->
+           
+        
+
+          
+      </body>
+</html>
